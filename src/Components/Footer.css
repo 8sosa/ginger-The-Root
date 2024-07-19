@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+ul {
+    list-style: none;
+}
+.widthFit {
+    width: fit-content;
+}
+.logo {
+    max-width: 100px;
+}
+.gingerFooter {
+    background: transparent;
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+.gingerFooterContainer {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    width: 100%;
+    justify-content: space-around;
+}
+.gingerFooterLinkHeader {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20.16px;
+    letter-spacing: 0.3em;
+    text-align: left;
+    font-style: normal;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.gingerFooterLink {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-family: Outfit;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.16px;
+    text-align: left;
+    font-style: normal;
+    color: #ffffff;
+    text-decoration: none;
+}
+.contactBtn {
+    min-width: fit-content;
+    height: fit-content;
+    padding: 14px 33px 14px 33px;
+    border-radius: 42px;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25.2px;
+    letter-spacing: 0.33em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #E6450D;
+    background-color: #D9D9D9;
+    margin-bottom: 0px;
+}
+.inputField {
+    background-color: transparent;
+    color: #FFFFFF;
+    border: 0px !important;
+    border-radius: 48px;
+    padding: 16px 26px;
+    height: fit-content;
+}
+.inputField::placeholder {
+    color: #FFFFFF;
+}
+.news {
+    background-color: #E6450D5E;
+    border-radius: 48px;
+
+}
+
+@media (max-width: 600px) {
+    .gingerFooter {
+        padding: 20px;
+    }
+    .gingerFooterContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        max-width: 100%;
+    }
+}
+@media (min-width: 601px) and (max-width: 1023px) {
+    .gingerFooterContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 50px;
+        max-width: 100%;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1439px) {
+    .gingerFooterContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 50px;
+        max-width: 100%;
+    }
+}
