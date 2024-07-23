@@ -5,7 +5,6 @@ import GingerNavbar from './Components/Navbar';
 import About from './Components/Images/about.png';
 import Ls from './Components/Images/ls.png'
 import GingerFooter from './Components/Footer';
-// import Badge from 'react-bootstrap/Badge';
 
 function App() {
   return (
@@ -65,32 +64,41 @@ function App() {
         </div>
       </section>
       <Clients />
-      {/* <section id='testimonials' className='d-flex flex-column mt-5'>
-        <h1 className='heroHeaderText1'>Testimonials.</h1>
+      <section id='testimonials' className='d-flex flex-column mt-5'>
+        <h1 className='heroHeaderText1 mt-5'>Testimonials.</h1>
         <div className='testimonials'>
-          <div className='m-1'>
-            <div className='servicesCard'>
-              <div><img src={Ls} alt='Live streaming example' className='cardImage1'/> <Badge className="badge" /></div>
-              <span className='subHeading'>ALEK QUASAR</span>
-              <p className='bodyText'>At Ginger the Collective, we don't just create media; we craft experiences. With a passion for storytelling and a commitment to excellence.</p>
+          <div className="servicesCardGroup">
+            <div className="image-wrapper">
+              <img src={Ls} alt="ALEK QUASAR example" className="cardImage1" />
+              <div className="badge" />
+            </div>
+            <div className="servicesCard pt-5">
+              <span className="subHeading">ALEK QUASAR</span>
+              <p className="bodyText">At Ginger the Collective, we don't just create media; we craft experiences. With a passion for storytelling and a commitment to excellence.</p>
             </div>
           </div>
-          <div className='m-1'>
-            <img src={Ls} alt='ALEK QUASAR example' className='cardImage1' />
-            <div className='servicesCard'>
-              <span className='subHeading'>ALEK QUASAR</span>
-              <p className='bodyText'>At Ginger the Collective, we don't just create media; we craft experiences. With a passion for storytelling and a commitment to excellence.</p>
+          <div className="servicesCardGroup">
+            <div className="image-wrapper">
+              <img src={Ls} alt="ALEK QUASAR example" className="cardImage1" />
+              <div className="badge" />
+            </div>
+            <div className="servicesCard pt-5">
+              <span className="subHeading">ALEK QUASAR</span>
+              <p className="bodyText">At Ginger the Collective, we don't just create media; we craft experiences. With a passion for storytelling and a commitment to excellence.</p>
             </div>
           </div>
-          <div className='m-1'>
-            <div className='servicesCard'>
-              <img src={Ls} alt='ALEK QUASAR example' className='cardImage1' />
-              <span className='subHeading'>ALEK QUASAR</span>
-              <p className='bodyText'>At Ginger the Collective, we don't just create media; we craft experiences. With a passion for storytelling and a commitment to excellence.</p>
+          <div className="servicesCardGroup">
+            <div className="image-wrapper">
+              <img src={Ls} alt="ALEK QUASAR example" className="cardImage1" />
+              <div className="badge" />
+            </div>
+            <div className="servicesCard pt-5">
+              <span className="subHeading">ALEK QUASAR</span>
+              <p className="bodyText">At Ginger the Collective, we don't just create media; we craft experiences. With a passion for storytelling and a commitment to excellence.</p>
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
       <section id='contact'>
         <div className='services d-flex flex-column align-items-center'>
           <span className='heroHeaderText1 mt-4'>are you ready ?</span>

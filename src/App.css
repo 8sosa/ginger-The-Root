@@ -151,6 +151,20 @@ html {
   margin-left: 100px;
   margin-right: 100px;
 }
+.servicesCardGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.image-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100px; /* Adjust as needed */
+  height: 100px; /* Adjust as needed */
+  margin-bottom: -50px; /* Adjust as needed */
+}
 .servicesCards {
   display: flex;
   flex-direction: row;
@@ -158,6 +172,27 @@ html {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 40px;
+}
+.cardImage1 {
+  max-width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.badge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #E6450D !important;
+  padding: 5px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50% !important;
+  z-index: 2;
+}
+.badge:empty {
+  display: flex !important;
 }
 .servicesCard {
   display: flex;
@@ -172,14 +207,6 @@ html {
   width: 100%;
   border-radius: 15px;
 }
-.cardImage1 {
-  position: absolute;
-  max-width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  top: -25%;
-  margin-bottom: 50%;
-}
 .subHeading {
   font-family: "Outfit", sans-serif;
   font-size: 16px;
@@ -188,7 +215,7 @@ html {
   letter-spacing: 0.3em;
   text-align: center;
   text-transform: uppercase;
-  max-width: 130px;
+  max-width: fit-content;
   margin-top: 20%;
   margin-bottom: 12px;
 }
@@ -205,25 +232,14 @@ html {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-top: 120px;
+  margin-top: 50px;
   gap: 15px;
   justify-content: center;
 }
 .contactBtn {
   width: fit-content;
 }
-.imageContainer {
-  position: relative;
-  width: 100%;
-}
-.badge {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  color: #E6450D !important;
-  background: transparent !important;
-  z-index: 1000;
-}
+
 
 
 @media (max-width: 600px) {
@@ -251,10 +267,10 @@ html {
     margin-right: 30px;
   }
   .subHeading {
-    font-size: 16px;
-    line-height: 14px;
-    max-width: 100px;
-    margin-top: 10%;
+    font-size: 12px;
+    line-height: 12px;
+    max-width: 200px;
+    margin-top: 7%;
     margin-bottom: 10px;
   }
   .bodyText {
